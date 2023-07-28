@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>  
+
+    <!--launch whycon-->
+    <include file="$(find whycon)/launch/whycon-test.launch">
+
+        <arg name="cam_info" value="/gazebo_camera/camera_info" />
+        <arg name="cam_raw" value="/gazebo_camera/image_raw" />
+        <arg name="circle_diameter" value="0.2" />
+
+    </include>
+
+</launch>

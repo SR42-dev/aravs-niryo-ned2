@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: aravs-niryo-ned2
+Description: Description of aravs-niryo-ned2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

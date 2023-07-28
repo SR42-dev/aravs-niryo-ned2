@@ -1,0 +1,33 @@
+<package format="2">
+
+  <name>whycon</name>
+  <version>0.7.5</version>
+  <description>Implementats the WhyCon localisation system into ROS.</description>
+
+  <maintainer email="jiri.ulrich@fel.cvut.cz">Jiri Ulrich</maintainer>
+
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>Custom. Please contact us.</license>
+
+  <url type="website">https://github.com/gestom/whycon-orig</url>
+
+  <author email="tomas.krajnik@fel.cvut.cz">Tom Krajnik</author>
+  <author email="jiri.ulrich@fel.cvut.cz">Jiri Ulrich</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf</depend>
+  <depend>image_transport</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>message_generation</depend>
+  <depend>visualization_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+  </export>
+</package>

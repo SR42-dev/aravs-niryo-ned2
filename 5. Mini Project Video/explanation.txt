@@ -1,0 +1,1 @@
+In the video, the robot operates on two workspaces where the fuel receptacle is detected as a red circle on the second workspace and the fuel pellets are detected as smaller circles on the first workspace. The source code detects, seperates and transfers the fuel pellets from workspace one to the receptacle in workspace 2.

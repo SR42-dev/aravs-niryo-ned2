@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>    
+    
+    <!--launch gazebo simulation-->
+    <include file="$(find niryo_robot_bringup)/launch/desktop_gazebo_simulation.launch">
+
+        <arg name="hardware_version" value="ned2" />
+        <arg name="gripper_n_camera" value="true" />
+
+    </include>
+
+    <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/niryo_robot_vision/compressed_video_stream raw out:=/niryo_robot_vision/image_raw" />
+
+    <!--launch whycon-->
+    <include file="$(find whycon)/launch/whycon-test.launch">
+
+        <arg name="cam_info" value="/niryo_robot_vision/camera_intrinsics" />
+        <arg name="cam_raw" value="/niryo_robot_vision/image_raw" />
+        <arg name="circle_diameter" value="0.2" />
+
+    </include>
+
+</launch>
